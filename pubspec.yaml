@@ -1,0 +1,71 @@
+name: getx_architecture
+description: "getx_architecture"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  # 国际化库
+  flutter_localizations:
+      sdk: flutter
+  # 动画库
+  cupertino_icons: ^1.0.8
+  #getx
+  get: ^4.6.6
+  flutter_screenutil: ^5.9.1
+  lottie: ^3.1.2
+  easy_refresh: ^3.4.0
+  animated_text_kit: 4.2.2
+  mmkv: ^1.3.5
+  dio: ^5.4.3+1
+  # HTTP 缓存拦截器
+  dio_cache_interceptor: ^3.5.0
+  # HTTP 本地数据存储 轻量级 hive数据库 适配所有平台
+  dio_cache_interceptor_hive_store: ^3.2.2
+  # 网络请求 日志输出格式化
+  pretty_dio_logger: 1.3.1
+  # 加载动画
+  flutter_easyloading: 3.0.5
+  # 获取app 权限
+  permission_handler: ^11.3.1
+  # 图片加载
+  extended_image: ^8.2.0
+  # 图片文件流
+  extended_image_library: ^4.0.4
+  # 刷新控件
+  # 获取文件路径
+  path_provider: ^2.1.3
+  path: ^1.9.0
+  # web 模拟器
+  device_frame: ^1.2.0
+  # 本地存储管理工具
+  flutter_cache_manager: ^3.3.2
+  # 加密算法
+  crypto: 3.0.3
+  # 图片选择
+  image_picker: ^1.1.1
+  # web加载器
+  webview_flutter: ^4.8.0
+  webview_flutter_android: ^3.16.2
+  webview_flutter_wkwebview: ^3.13.1
+  # 获取app信息
+  package_info_plus: ^8.0.0
+  # 调用系统分享
+  share_plus: ^9.0.0
+  # 编辑图片
+  image_editor: ^1.5.1
+  # 文字动画
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/base/
