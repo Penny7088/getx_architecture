@@ -8,8 +8,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'app/init/init_config.dart';
+import 'app/init/local/i18_tr.dart';
+import 'app/router/app_router.dart';
 import 'base/utils/util.dart';
 
 void main() {
@@ -43,17 +45,28 @@ void init() async {
 Widget initGetMaterialApp({
   Widget Function(BuildContext, Widget?)? builder,
 }) {
-  // List<String> launch = LaunchTool.getLocalLaunch();
   return GetMaterialApp(
 
+    initialRoute: AppRouter.configNormalRouts(),
+    getPages: AppRouter.getAllRoutS(),
+    defaultTransition: Transition.rightToLeft,
     /// 本地支持语言
     supportedLocales: const [
       Locale('zh', 'CN'),
       Locale('en', 'US'),
     ],
-
+    useInheritedMediaQuery: true,
+    translations: I18TRMessages(),
+    fallbackLocale: const Locale('zh', 'CN'),
     /// 是否显示 导航栏右上角 debug 标识
     debugShowCheckedModeBanner: false,
+    /// 国际化配置 代理
+    localizationsDelegates: const [
+      GlobalMaterialLocalizations.delegate,
+      GlobalWidgetsLocalizations.delegate,
+      GlobalCupertinoLocalizations.delegate, // ios
+    ],
+
     builder: builder,
   );
 }

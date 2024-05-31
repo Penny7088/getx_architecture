@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
-import 'package:getx_architecture/app/pages/splash/binding.dart';
 import 'package:getx_architecture/app/pages/splash/view.dart';
+
+import '../pages/main/main_view.dart';
 
 /// FileName app_router
 ///
@@ -15,14 +16,12 @@ class AppRouter{
     return [
       GetPage(
         name: RouterId.splash,
-        page: () => SplashPage(),
-        binding: SplashBinding(),
+        page: () => const SplashPage(),
       ),
-      // GetPage(
-      //   name: RouterId.splash,
-      //   page: () => MainPage(),
-      //   binding: MainBinding(),
-      // ),
+      GetPage(
+        name: RouterId.splash,
+        page: () => const MainPage(),
+      ),
       // ...ShopRouterS.routerS
     ];
   }
@@ -34,6 +33,6 @@ class AppRouter{
 }
 
 class RouterId {
-  static const String splash = 'app/splash';
-  static const String main = 'app/main';
+  static const String splash = '/app/splash';
+  static const String main = '/app/main';
 }

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:getx_architecture/app/pages/splash/state.dart';
 import 'package:getx_architecture/base/controller/common_controller.dart';
 
@@ -21,7 +22,10 @@ class SplashController extends CommonController<SplashState> {
 
   @override
   configUI() {
-    super.configUI();
+   isShowBottomBar = false;
+   isShowAppBar = false;
+   debugPrint('state.runtimeType = ${state.runtimeType}');
+   debugPrint('controller = ${this.runtimeType}');
   }
 
   @override

@@ -17,8 +17,6 @@ import '../view/mixin/refresh_mixin.dart';
 abstract class CommonController<S extends BaseState> extends GetxController
     with AbstractNetWork, WidgetsBindingObserver, AppLifeCycleAbs {
 
-
-
   CommonPlaceHoldType placeHoldType = CommonPlaceHoldType.nothing;
 
   /// 缺省页 描述语
@@ -61,7 +59,7 @@ abstract class CommonController<S extends BaseState> extends GetxController
   // 配置界面是否显示 加载界面
   var isShowLoadWidget = false.obs;
 
-  late S state;
+  late S state = createState();
 
   @override
   void onInit() {
@@ -76,7 +74,7 @@ abstract class CommonController<S extends BaseState> extends GetxController
   S  createState();
   /// 配置默认选项
   configUI() {
-    state = createState();
+
   }
   /// 界面渲染完成
   configWidgetRenderingCompleted() async {}
