@@ -22,7 +22,8 @@ class SplashPage extends CommonBaseView<SplashController>{
 
   @override
   String controllerTag() {
-   return 'SplashController';
+    controller.controllerTag ='SplashController';
+   return controller.controllerTag!;
   }
 
   @override

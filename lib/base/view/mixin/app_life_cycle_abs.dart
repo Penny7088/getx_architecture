@@ -1,12 +1,3 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: TT
- * @Date: 2023-04-22 11:11:09
- * @LastEditors: TT
- * @LastEditTime: 2023-07-10 10:46:59
- */
-
 import 'package:flutter/material.dart';
 
 mixin class AppLifeCycleAbs {

@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:get/get.dart';
 import 'package:getx_architecture/app/pages/splash/state.dart';
 import 'package:getx_architecture/base/controller/common_controller.dart';
 
@@ -31,11 +32,13 @@ class SplashController extends CommonController<SplashState> {
   @override
   void onReady() {
     super.onReady();
+    debugPrint('controller = ${controllerTag}');
   }
 
   @override
   void onClose() {
     super.onClose();
+    Get.delete<SplashController>(tag: controllerTag);
   }
 
 }
