@@ -19,7 +19,7 @@ class AppRouter{
         page: () => const SplashPage(),
       ),
       GetPage(
-        name: RouterId.splash,
+        name: RouterId.main,
         page: () => const MainPage(),
       ),
       // ...ShopRouterS.routerS
