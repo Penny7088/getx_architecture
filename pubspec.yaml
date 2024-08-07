@@ -58,6 +58,7 @@ dependencies:
   share_plus: ^9.0.0
   # 编辑图片
   image_editor: ^1.5.1
+  infinite_carousel: ^1.1.1
   # 文字动画
 dev_dependencies:
   flutter_test:
