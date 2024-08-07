@@ -39,7 +39,7 @@ class I18TRMessages extends Translations {
         'ru': {...ru},
         'ru-RU': {...ru}, //  俄语-俄罗斯
         'uk': {...uk}, // 乌克兰语
-        'ar': {...ar},
+        'ar': {...ar}, /// 阿拉伯
         'ar-SA': {...ar},
         'ar-EG': {...ar},
         'ar-KW': {...ar},

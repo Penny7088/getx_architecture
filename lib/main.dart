@@ -50,13 +50,8 @@ Widget initGetMaterialApp({
     initialRoute: AppRouter.configNormalRouts(),
     getPages: AppRouter.getAllRoutS(),
     defaultTransition: Transition.rightToLeft,
-    /// 本地支持语言
-    supportedLocales: const [
-      Locale('zh', 'CN'),
-      Locale('en', 'US'),
-    ],
     useInheritedMediaQuery: true,
-    translations: I18TRMessages(),
+    translationsKeys: I18TRMessages().keys,
     fallbackLocale: const Locale('zh', 'CN'),
     /// 是否显示 导航栏右上角 debug 标识
     debugShowCheckedModeBanner: false,

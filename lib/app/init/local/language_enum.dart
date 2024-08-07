@@ -87,7 +87,6 @@ enum LanguageEnum {
   pa, // 旁遮普语
   qu, // 凯楚亚语
   gd, // 苏格兰盖尔语
-
   st, // 塞索托语
   sn, // 修纳语
   sd, // 信德语
