@@ -1,6 +1,4 @@
-当然，以下是上述分析的 Markdown 格式版本：
 
----
 
 # GetX Architecture 分析
 
