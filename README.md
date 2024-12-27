@@ -1,6 +1,6 @@
 
 
-# GetX Architecture 分析
+# GetX Architecture
 
 ## 项目概述
 
